@@ -3,6 +3,8 @@ A simple Vue component to display tables. Support sortable columns, pagination a
 
 Example with 2 Table components, first one with default styles and paginator, and second one with custom css styles and paginator in 'select' mode
 
+![Usage example](https://raw.githubusercontent.com/ozoono/vue-table-component/master/docs/screenshot.png)
+
 ## Usage
 ```html
   <TableView
