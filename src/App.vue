@@ -2,25 +2,25 @@
   <div id="app">
     <h1>Vue table component</h1>
     <h2>Default styles example:</h2>
-    <TableView
-      :headers="columns"
-      :rows="items"      
-      :sort="sort1"
-    >
-      <template v-slot:items="{ row }">
-        <td>{{ row.first_name }}</td>
-        <td>{{ row.last_name }}</td>   
-        <td>{{ row.email }}</td>              
-        <td>{{ row.age }}</td>     
-        <td>{{ row.country }}</td>                 
-        <td>{{ row.category }}</td>
-        <td>{{ row.last_update }}</td>        
-      </template>
+  <TableView
+    :headers="columns"
+    :rows="items"      
+    :sort="sort1"
+  >
+    <template v-slot:items="{ row }">
+      <td>{{ row.first_name }}</td>
+      <td>{{ row.last_name }}</td>   
+      <td>{{ row.email }}</td>              
+      <td>{{ row.age }}</td>     
+      <td>{{ row.country }}</td>                 
+      <td>{{ row.category }}</td>
+      <td>{{ row.last_update }}</td>        
+    </template>
 
-      <template v-slot:no-data>
-        <span>No data</span>
-      </template>
-    </TableView>
+    <template v-slot:no-data>
+      <span>No data</span>
+    </template>
+  </TableView>
 
     <div class="separator">---&#10043;---</div>
 
@@ -30,7 +30,7 @@
       :rows="items"      
       :sort="sort2"
       :pagination="pagination"
-      :css-style="cssStyle"      
+      css-style="custom-style"      
     >
       <template v-slot:items="{ row }">
         <td>{{ row.first_name }}</td>
@@ -78,8 +78,7 @@ export default {
         itemsPerPage: 7,
         align: 'center',
         visualStyle: 'select'
-      },      
-      cssStyle: 'custom-style'
+      }
     }    
   }
 }
