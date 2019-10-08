@@ -11,7 +11,4 @@
   margin-top: 50px;
   text-align: center;
 }
-.button {
-
-}
 </style>
