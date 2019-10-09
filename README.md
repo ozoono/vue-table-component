@@ -5,6 +5,9 @@ Example with 2 Table components, first one with default styles and paginator, an
 
 ![Usage example](https://raw.githubusercontent.com/ozoono/vue-table-component/master/docs/screenshot.png)
 
+## Demo
+You can check this [live demo](https://ozoono.github.io/vue-table-component/)
+
 ## Usage
 ```html
   <TableView
