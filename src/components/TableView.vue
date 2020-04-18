@@ -10,7 +10,7 @@
           >     
             <template v-if="sortEnabled">
               <template v-if="sortColumn == idx">
-                <i v-if="sortType == 'desc'" class="icofont-arrow-up icofont-md active"></i>
+                <i v-if="sortOrder == 'desc'" class="icofont-arrow-up icofont-md active"></i>
                 <i v-else class="icofont-arrow-down icofont-md active"></i>
               </template>
               <template v-else>
@@ -109,6 +109,12 @@ export default {
       visibleRows: {},
       tableRows: {},      
       page: 1
+    }
+  },
+  watch: {
+    rows: function() {
+      this.tableRows = this.rows.slice(0);
+      this.selectVisibleRows();
     }
   },
   computed: {
