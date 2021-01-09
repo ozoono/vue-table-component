@@ -84,7 +84,7 @@ export default {
 }
 </script>
 <style lang="scss">
-@import url(http://fonts.googleapis.com/css?family=Roboto+Mono);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 
 body, html{
   height: 100%;
